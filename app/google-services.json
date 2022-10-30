@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "37897870712",
+    "project_id": "ranchites-bd010",
+    "storage_bucket": "ranchites-bd010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37897870712:android:b35061a38260f9a9fe3c8d",
+        "android_client_info": {
+          "package_name": "com.approdevelopers.ranchites"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37897870712-60t9orupdbqfl2nori8enk8nuu2mfkuv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.approdevelopers.ranchites",
+            "certificate_hash": "5598d6647f25af3d90c27793f106dcd6d694b5ed"
+          }
+        },
+        {
+          "client_id": "37897870712-u2o74qr53vf9ln0pkuijshcnuin7affp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSKP_ewNe_sBPaQ0qTu7kj2qNUYdr6MGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37897870712-u2o74qr53vf9ln0pkuijshcnuin7affp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

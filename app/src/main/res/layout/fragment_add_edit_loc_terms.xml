@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddEditLocFragmentTerms">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/page_parent_tag_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/on_boarding_second_page_bg">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/terms_and_conditions"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/checkbox_terms"
+            android:layout_below="@id/page_parent_tag_terms"
+            android:background="@color/add_edit_card_bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txt_terms_of_data"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_of_data" />
+
+                <TextView
+                    android:id="@+id/terms_of_data_desc"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_terms_of_data"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="4dp"
+                    android:text="@string/terms_of_data_desc"
+                    android:textIsSelectable="true" />
+
+                <TextView
+                    android:id="@+id/terms_of_loc"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/terms_of_data_desc"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="4dp"
+                    android:text="@string/terms_of_loc"
+                    android:textIsSelectable="true" />
+
+                <TextView
+                    android:id="@+id/terms_actions"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/terms_of_loc"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="4dp"
+                    android:text="@string/terms_action"
+                    android:textIsSelectable="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/terms_actions"
+                    android:layout_marginTop="16dp"
+                    android:padding="4dp"
+                    android:text="@string/terms_agree_guide"
+                    android:textIsSelectable="true"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ads_may_appear"
+            android:focusable="true"
+            android:text="@string/agree_to_terms_and_conditions" />
+
+        <TextView
+            android:id="@+id/ads_may_appear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ads_may_appear"
+            android:layout_above="@id/btn_previous_frag_terms_det"
+            android:gravity="center"
+            android:padding="4dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_previous_frag_terms_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/on_boarding_second_page_bg"
+            android:src="@drawable/ic_previous_black"
+            android:contentDescription="@string/previous"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_update_frag_terms_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/on_boarding_third_page_bg"
+            android:drawableEnd="@drawable/ic_update_black"
+            android:drawableTint="@color/black"
+            android:text="@string/update"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_add_frag_terms_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/on_boarding_third_page_bg"
+            android:contentDescription="@string/add"
+            android:drawableEnd="@drawable/ic_upload_black"
+            android:drawableTint="@color/black"
+            android:text="@string/add"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</FrameLayout>

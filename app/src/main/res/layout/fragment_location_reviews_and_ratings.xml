@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.DayNight"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.LocationReviewsAndRatingsFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearlayout23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:background="#EBDEF0"
+                    >
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/linearlayoutRatingHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/txt_com_det_rating_sec_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:textSize="50sp"
+                            android:textColor="@color/black"
+                            />
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            android:id="@+id/rating_com_det_rating_sec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_com_det_rating_sec_title"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:numStars="5"
+                            android:stepSize="0.5"
+                            android:theme="@style/RatingBarThemeDarkBg"
+                            />
+                        <TextView
+                            android:id="@+id/txt_total_reviews_count_rating_sec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_com_det_rating_sec"
+                            android:maxLength="10"
+                            />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/linearlayoutRatingHead"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignEnd="@id/rating_com_det_rating_sec"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        >
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5"
+                                />
+
+                            <com.google.android.material.progressindicator.LinearProgressIndicator
+                                android:id="@+id/seekBar_rating_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="30"
+                                android:layout_gravity="center_vertical"
+                                app:trackCornerRadius="4dp"
+                                app:trackThickness="10dp"
+                                android:layout_marginStart="4dp"
+                                app:trackColor="@color/white"
+                                app:indicatorColor="@color/seekbar_track_indicator"
+                                style="@style/Widget.MaterialComponents.LinearProgressIndicator"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat><androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            />
+
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:id="@+id/seekBar_rating_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="30"
+                            android:layout_gravity="center_vertical"
+                            app:trackCornerRadius="4dp"
+                            app:trackThickness="10dp"
+
+                            android:layout_marginStart="4dp"
+                            app:trackColor="@color/white"
+                            app:indicatorColor="@color/seekbar_track_indicator"
+                            style="@style/Widget.MaterialComponents.LinearProgressIndicator"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat><androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            />
+
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:id="@+id/seekBar_rating_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="30"
+                            android:layout_gravity="center_vertical"
+                            app:trackCornerRadius="4dp"
+                            app:trackThickness="10dp"
+
+                            android:layout_marginStart="4dp"
+                            app:trackColor="@color/white"
+                            app:indicatorColor="@color/seekbar_track_indicator"
+                            style="@style/Widget.MaterialComponents.LinearProgressIndicator"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat><androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            />
+
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:id="@+id/seekBar_rating_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="30"
+                            android:layout_gravity="center_vertical"
+                            app:trackCornerRadius="4dp"
+                            app:trackThickness="10dp"
+                            android:layout_marginStart="4dp"
+                            app:trackColor="@color/white"
+                            app:indicatorColor="@color/seekbar_track_indicator"
+                            style="@style/Widget.MaterialComponents.LinearProgressIndicator"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat><androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            />
+
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:id="@+id/seekBar_rating_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:layout_gravity="center_vertical"
+                            android:progress="30"
+                            app:trackCornerRadius="4dp"
+                            app:trackThickness="10dp"
+                            android:layout_marginStart="4dp"
+                            app:trackColor="@color/white"
+                            app:indicatorColor="@color/seekbar_track_indicator"
+                            style="@style/Widget.MaterialComponents.LinearProgressIndicator"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reviews"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:padding="4dp"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_comp_det_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                />
+            <TextView
+                android:id="@+id/txt_loc_det_no_reviews_found_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_reviews_found"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

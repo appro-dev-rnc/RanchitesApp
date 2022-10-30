@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AboutPage">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_about"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            android:background="@color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img_about_main"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ranchites_app_logo" />
+            <TextView
+                android:id="@+id/txt_about_main_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_below="@id/img_about_main"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_about_main_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_about_main_title"
+                android:text="@string/about_page_main_desc"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/txt_about_for_business_title"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_about_main_desc"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/ranchites_for_business"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_about_for_business_sub_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_about_for_business_title"
+                android:text="@string/ranchites_for_business_desc"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:gravity="center"
+                android:layout_margin="16dp"
+                android:textIsSelectable="true"
+                />
+            <ImageView
+                android:id="@+id/img_about_business_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_place_business"
+                android:contentDescription="@string/add_new_place"
+                android:layout_below="@id/txt_about_for_business_sub_head"
+                />
+
+            <TextView
+                android:id="@+id/txtabout_for_business_desc"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_about_business_add"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="@string/add_new_place_desc"
+                android:textStyle="italic"
+                android:textIsSelectable="true"/>
+
+            <ImageView
+                android:id="@+id/img_about_business_loc_share"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/txtabout_for_business_desc"
+                android:src="@drawable/enable_location_share"
+                android:contentDescription="@string/enable_location_share"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:id="@+id/txt_about_for_business_loc_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_about_business_loc_share"
+                android:text="@string/enable_location_share_desc"
+                android:textStyle="bold|italic"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/txt_about_professional_title"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_about_for_business_loc_share"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/great_vibes"
+                android:text="@string/ranchites_for_professionals"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txt_about_professional_sub_head"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_about_professional_title"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/ranchites_for_professionals_desc"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textIsSelectable="true"/>
+
+            <ImageView
+                android:id="@+id/img_about_professional_share"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/txt_about_professional_sub_head"
+                android:contentDescription="@string/enable_search_by_profession"
+                android:src="@drawable/enable_share_by_profession" />
+
+            <TextView
+                android:id="@+id/txt_about_professional_desc"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_about_professional_share"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:textIsSelectable="true"
+                android:text="@string/enable_search_by_profession_guide"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_page_ranchites_tag_bottom"
+                android:textStyle="bold"
+                android:layout_below="@id/txt_about_professional_desc"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:padding="20dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

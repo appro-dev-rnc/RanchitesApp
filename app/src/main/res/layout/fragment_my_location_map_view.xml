@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.MyLocationMapView"
+    android:id="@+id/my_loc_map_nested_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/my_loc_map_parent_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            >
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/map_fragement_my_loc_details"
+                class="com.approdevelopers.ranchites.Utils.CustomMapFragmentClass"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                />
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/txt_my_loc_no_location_found_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_loc_no_map_error"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

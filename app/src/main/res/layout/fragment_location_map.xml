@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.LocationMap"
+    android:id="@+id/scroll_view_loc_det_map_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/loc_det_map_frag_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="4dp"
+            >
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/map_loc_det_fragment"
+                class="com.approdevelopers.ranchites.Utils.CustomMapFragmentClass"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txt_loc_det_no_map_found_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_loc_found_loc_det_page"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="50dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

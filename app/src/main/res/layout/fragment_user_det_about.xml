@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UserDetAbout">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <com.google.android.material.card.MaterialCardView
+           android:id="@+id/user_det_about_parent"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginTop="12dp"
+           android:layout_marginBottom="8dp"
+           >
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="8dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/about"
+                   android:padding="2dp"
+                   style="@style/TextAppearance.AppCompat.Subhead"
+                   android:textStyle="bold"
+                   />
+               <TextView
+                   android:id="@+id/txt_com_det_user_about"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:textColor="@color/black"
+                   android:textIsSelectable="true"
+                   style="@style/TextAppearance.AppCompat.Body1"
+                   />
+           </androidx.appcompat.widget.LinearLayoutCompat>
+       </com.google.android.material.card.MaterialCardView>
+
+       <TextView
+           android:id="@+id/txt_user_det_no_about_found_error"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/no_desc_found_user_page"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentTop="true"
+           android:layout_margin="50dp"
+           android:gravity="center"
+           android:visibility="gone"
+           />
+
+   </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

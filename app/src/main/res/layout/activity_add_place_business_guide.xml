@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddPlaceBusinessGuide">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_add_place_guide"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            android:background="@color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            >
+            <ImageView
+                android:id="@+id/img_add_place_guide_title"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ranchites_app_logo"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"
+                android:contentDescription="@string/app_name"
+                />
+
+            <TextView
+                android:id="@+id/txt_to_add_guide_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_place_title_text"
+                android:textStyle="bold"
+                android:layout_below="@id/img_add_place_guide_title"
+                style="@style/TextAppearance.AppCompat.Title"
+                />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/float_btn_add_place_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_add_place_business"
+                android:backgroundTint="@color/on_boarding_second_page_bg"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_below="@id/txt_to_add_guide_place"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                app:icon="@drawable/ic_add_business_black"
+                />
+
+            <TextView
+                android:id="@+id/txt_business_add_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_place_text_2"
+                android:layout_below="@id/float_btn_add_place_guide"
+                android:textStyle="bold"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_add_busniess_banner_guide_page"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/business_banner_image"
+                android:layout_below="@id/txt_business_add_guide"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/place_banner_image"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_place_text_3"
+                android:layout_below="@id/img_add_busniess_banner_guide_page"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                style="@style/TextAppearance.AppCompat.Body1"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/add_place_guide_basic"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/basic_details"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_place_text_4"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:padding="8dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/add_place_guide_additional"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/additional_details"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_place_text_5"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:padding="8dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/add_place_guide_map"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/add_place_text_map_guide"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_place_text_6"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:padding="8dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/add_place_guide_terms"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/terms_action"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_place_text_7"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:padding="8dp"
+                android:layout_margin="16dp"
+                />
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

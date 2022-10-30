@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">Ranchites</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="close">Close</string>
+    <string name="go_back">Go Back</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    
+    <string name="ranchites_interstitial_add_update_reviews_ad_unit">ca-app-pub-4597166595156209/4447695405</string>
+    <string name="ranchites_interstitial_report_place_profile_ad_unit">ca-app-pub-4597166595156209/1449597598</string>
+    <string name="ranchites_interstitial_contact_us_ad_unit">ca-app-pub-4597166595156209/7352924298</string>
+    <string name="ranchites_interstitial_about_page_ad_unit">ca-app-pub-4597166595156209/5005699228</string>
+    <string name="ranchites_interstitial_delete_image_ad_unit">ca-app-pub-4597166595156209/5807502783</string>
+    <string name="ranchites_rewarded__add_edit_place_ad_unit">ca-app-pub-4597166595156209/6312291478</string>
+    <string name="ranchites_rewarded_profile_image_ad_unit">ca-app-pub-4597166595156209/1400091169</string>
+    <string name="ranchites_rewarded_loc_media_image_ad_unit">ca-app-pub-4597166595156209/7021751805</string>
+
+    <!-- splash screen strings-->
+    <string name="splash_sub_title">Explore every corners of\nRanchi</string>
+    <string name="splash_logo_desc">Ranchites app logo</string>
+
+
+    <!--ON BOARDING SCREEN STRINGS-->
+    <string name="get_started">Get started</string>
+    <string name="explore_ranchi">Explore Ranchi</string>
+    <string name="explore_ranchi_desc">Explore every corners of Ranchi.\nSee what\'s trending/ what\'s most searched in the city.\nGet updates about latest events in the city.</string>
+    <string name="on_boarding_page_two_title">One stop for your search</string>
+    <string name="on_boarding_page_two_desc">Lookin for anything in the city?\nCheckout here.\nAnd, With Near Me search feature\nSearch for places, things, businesses near your location.</string>
+    <string name="on_boarding_page_three_title">Unveil your business or profession</string>
+    <string name="on_boarding_page_three_desc">Bring exposure to your business.\nAdd your business in Ranchites app and make your business digitally interactive.</string>
+
+
+    <!-- LOGIN SCREEN STRINGS -->
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="have_not_registered">Haven\'t registered yet?</string>
+
+    <!-- SIGN UP SCREEN STRINGS -->
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="otp">OTP</string>
+    <string name="verify">Verify</string>
+    <string name="enter_mob_number">Enter\nMobile number</string>
+    <string name="phone_number">Phone number</string>
+    <string name="account_successfully_created">Account Successfully Created</string>
+    <string name="already_registered">Already registered?</string>
+
+    <!-- FORGOT PASSWORD SCREEN STRINGS -->
+    <string name="enter_mob_num_guide">Enter your registered mobile number to receive the OTP for verification</string>
+    <string name="enter_otp_guide">Enter the OTP received in your registered mobile number.</string>
+    <string name="verify_otp">Verify otp</string>
+    <string name="enter_new_password_tag">Enter\nNew Password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="update_password">Update password</string>
+
+    <!-- MAIN ACTIVITY STRINGS -->
+    <string name="hey_ranchites">Hey Ranchites !</string>
+    <string name="advertisement">Advertisement</string>
+    <string name="featured_places_with_colon">Featured Places :</string>
+    <string name="recently_viewed_with_colon">Recently Viewed:</string>
+    <string name="most_searched_places_tag">**  Most Searched  Places  **</string>
+    <string name="view_all">View all</string>
+    <string name="professionals">Professionals</string>
+    <string name="professionals_tag_desc">Explore the professionals \nin the city</string>
+    <string name="best_rated_place_tag">Best Rated Places </string>
+    <string name="best_rated_place_tag_desc">Explore the best rated places \nin the city</string>
+    <string name="near_me">Near Me</string>
+
+    <!-- MY PROFILE STRINGS -->
+    <string name="verified">Verified</string>
+    <string name="_tap_to_verify">Tap to verify</string>
+    <string name="no_my_profile_desc_found">No description found.\nTap on Edit, to update your profile.</string>
+    <string name="no_my_profile_images_found">No images found.\nTap on Add images, to add images your profile.</string>
+    <string name="no_my_profile_places_found">No places/business found.\nTap on Add Place/Business from options menu.</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_reviews_found">No reviews found.</string>
+
+
+    <!-- MY LOC STRINGS-->
+    <string name="my_loc_no_map_error">Location share disabled .\nTap on Edit Place/Business from options menu.</string>
+    <string name="my_loc_no_images_found">No images found.\nTap add images from options menu.</string>
+    <string name="my_loc_no_desc_found">No description found.\nTap edit place from options menu.</string>
+
+
+    <!-- USER DET PAGE -->
+    <string name="add_your_review">Add your review</string>
+    <string name="rate_this_user">Rate this user</string>
+    <string name="review">Review</string>
+    <string name="add_review">Add Review</string>
+    <string name="update_review">Update Review</string>
+    <string name="no_desc_found_user_page">No description found.</string>
+    <string name="no_image_found_user_page">No Images found.</string>
+
+    <!-- LOCATION DET PAGE STRINGS -->
+    <string name="place_banner_image">Place Banner Image</string>
+    <string name="category">Category</string>
+    <string name="rating">Rating</string>
+    <string name="address">Address</string>
+    <string name="search_count">Search Count</string>
+    <string name="deleting_place_business"> Deleting place/business</string>
+    <string name="error">Error</string>
+    <string name="task_done">Task done</string>
+    <string name="failed_to_del_place">Failed to delete place/business</string>
+    <string name="place_successfully_deleted">Place successfully deleted</string>
+    <string name="rate_this_place">Rate this place</string>
+    <string name="no_loc_found_loc_det_page">No Location found\n Or\n Location share disabled by owner</string>
+
+
+    <!-- EDIT MY PROFILE PAGE STRINGS -->
+    <string name="profile_image">Profile Image</string>
+    <string name="profession">Profession</string>
+    <string name="about">About</string>
+    <string name="enable_search_by_profession_tag">Enable Search By Profession on your profile ?</string>
+    <string name="enable_search_by_profession_tag_desc">(Enabling this , gets your profile listed whenever a user searches your profession)</string>
+
+
+    <!-- ABOUT PAGE STRINGS -->
+    <string name="about_page_main_desc">Ranchites app brings a platform for ranchi city users to interact with city people, businesses, professionals, places and many more digitally.\n\n***\nUsers can view whats most trendy in the city.\n***\nUsers can also interact with the places being most searched by the city people.\n***\n\nRanchites offers users to view, interact, add reviews to a place or a professional and many more.</string>
+    <string name="ranchites_for_business">Ranchites for Business</string>
+    <string name="ranchites_for_professionals">Ranchites for Professionals</string>
+    <string name="ranchites_for_professionals_desc">Ranchites offer professionals in the city to promote their work by sharing profile.</string>
+    <string name="ranchites_for_business_desc">Business owners of Ranchi city can add their business details and get listed in the application.</string>
+    <string name="add_new_place">Add new place</string>
+    <string name="add_new_place_desc">Tap on Add business button, to add your business details.\nEdit your place details in the edits section.\n\nGet to know what people have to say about your place/business in the reviews section.</string>
+    <string name="enable_location_share">Enable location share</string>
+    <string name="enable_location_share_desc">Enable location share and add your business location details to enjoy NEAR ME search feature for your place.\nWith Location Share enabled your location will be listed when some user near you searches for your place or your niche.</string>
+    <string name="enable_search_by_profession">Enable search by profession</string>
+    <string name="enable_search_by_profession_guide">Professionals can enable Search By Profession feature from their profile section and get listed in app.\nWith this feature enabled, whenever a user searches for your profession your account will be recommended.\n\nProfessionals can get to know their profile feedbacks in the review section.</string>
+    <string name="about_page_ranchites_tag_bottom">**  Ranchites  **</string>
+
+    <!-- REPORT PAGE STRINGS -->
+    <string name="report">Report</string>
+    <string name="reason">Reason</string>
+
+    <!-- ADD EDIT PLACE -->
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="agree_to_terms_and_conditions">Agree to the Ranchites App terms and conditions .</string>
+    <string name="previous">Previous</string>
+    <string name="update">Update</string>
+    <string name="add">Add</string>
+    <string name="location_details">Location Details</string>
+    <string name="enable_loc_det_tag_add_edit_page">Enable location share for your place/business to help users get directions .</string>
+    <string name="turn_on_loc_service_tag">To add or update your location on map , Please turn on your location.</string>
+    <string name="turn_on_loc_service_title">Turn on location/GPS service</string>
+    <string name="additional_details">Additional Details</string>
+    <string name="description">Description</string>
+    <string name="basic_details">Basic Details</string>
+    <string name="loc_banner_image_guide">Choose an image with 4:3 ratio dimensions\nOr in landscape mode for best view</string>
+    <string name="title">Title</string>
+    <string name="ads_may_appear">Ads may appear further.</string>
+
+
+    <!-- CITY UPDATES DETAIL PAGE STRINGS -->
+    <string name="no_image_found">No image found</string>
+
+    <!-- CONTACT US PAGE  STRINGS -->
+    <string name="query_contact_us_at">For any queries, Contact us at:</string>
+    <string name="query_contact_phone">+916203248900</string>
+    <string name="query_contact_email">help.ranchites.app@gmail.com</string>
+    <string name="query_contact_ig">Ig:- approdev.rnc</string>
+    <string name="check_policies">Check out our Privacy policies and Terms and Conditions Here,</string>
+    <string name="check_policies_links"><a href='https://sites.google.com/view/ranchites-privacy-policy'>Privacy Policy</a>        <a href='https://sites.google.com/view/ranchites-terms-and-conditions'>Terms and Conditions</a></string>
+    
+    
+
+    <string name="for_business_contact_us_at">For Business discussion or Advertisements,\nContact us at:</string>
+    <string name="for_business_phone">+916203248900</string>
+    <string name="for_business_email">appdevelopers.rnc@gmail.com</string>
+    <string name="for_business_ig">Ig:- approdev.rnc</string>
+
+
+    <!-- IMAGE FULL SCREEN PAGE  STRINGS -->
+    <string name="delete">Delete</string>
+    <string name="loading">Loading</string>
+    <string name="deleting_image_msg">Deleting Image…</string>
+    <string name="image_deleted"> Image Deleted…</string>
+    <string name="failed_to_delete_image">Failed to delete image…\nTry again</string>
+
+
+    <!-- SEARCH PAGE  STRINGS -->
+    <string name="search">Search</string>
+    <string name="no_results_found_search_page">No results found.</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="recently_viewed">Recently Viewed</string>
+
+    <!-- CATEGORY PAGE -->
+    <string name="category_title">Category Title</string>
+
+    <string name="maps_api_key">AIzaSyDfnyxSj5EkgLjfDwlFL_Q8wxxlYJgDYD0</string>
+    <string name="directions">Directions</string>
+    <string name="full_page">Full Page</string>
+
+    <string name="search_act_guide">Search for \nPlaces/ Businesses/ Professions.</string>
+    <string name="loc_det_transition_string">location_det_page_transition</string>
+    <string name="user_det_transition_string">user_profile_det_page_transition</string>
+
+
+    <!-- MENU TAGS -->
+    <string name="menu_report_this_place">Report this place</string>
+    <string name="menu_add_to_saved_collection">Add to saved collection</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_add_media_image">Add Media Image</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_add_image">Add Image</string>
+    <string name="menu_add_place_business">Add Place/Business</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="menu_all_categories">All categories</string>
+    <string name="menu_saved_loc">Saved Locations</string>
+    <string name="menu_communicate">Communicate</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+
+    <!-- TERMS AND CONDITIONS -->
+    <string name="terms_of_data">Terms of Data</string>
+    <string name="terms_agree_guide">Hereby, we request you to kindly provide details which are correct and accept the terms and conditions to continue forward.</string>
+    <string name="terms_action">If any of the above mentioned terms are found to be violated by you, your place/business details will be permanently deleted and removed from our apps server.\nAnd your profile will be kept under consideration which might lead to get your profile disabled.</string>
+    <string name="terms_of_loc">The location marked as your place/business in this app must be fully correct and valid.</string>
+    <string name="terms_of_data_desc">Name, Address, Category, Location of your business must be correct and valid.\nThe names, address, description of a place/business must not contain any abusive ,misleading words.\nThe pictures uploaded by you as business banner or promotion pictures must not contain any abusive or misleading content and must not promote any kind of nudity in this platform/app.</string>
+
+
+    <string name="about_and_how_to">About and How To ?</string>
+    <string name="home">Home</string>
+    <string name="my_place_business">My Place/Business</string>
+
+    <string name="category_with_colon">Category :</string>
+    <string name="search_count_with_colon">Search Count :</string>
+    <string name="location_share_with_colon">Location Share :</string>
+
+
+    <string name="no_profession_added">No profession added</string>
+    <string name="new_place_business">New \nPlace/Business</string>
+
+    <string name="password_guide">Password must have:\n*Atleast 6 characters\n*One Uppercase letter\n*One Lowercase letter\n*One number\n*One Special Symbol</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="main_my_place_no_place_found">No places/business found.\nTap on Add Place/Business button and get your business listed in Ranchites.</string>
+    <string name="main_my_place_no_place_guide_msg">To know how to add a Place/Business,</string>
+    <string name="tap_here">Tap Here</string>
+    
+    
+    <!-- Add Place Guide Strings-->
+    <string name="add_place_title_text">To add your Place/Business details, Tap on add place button:</string>
+    <string name="add_place_text_2">Next, Add your business details:</string>
+    <string name="add_place_text_3">Add your business banner image here. Tap and choose image that best describes your business</string>
+    <string name="add_place_text_4">Next, Add your business basic details like Title and Address</string>
+    <string name="add_place_text_5">Add your Business category and add every details in the description about your business.\nTry using hastags that best suits your business profile to rank top in user search results.</string>
+    <string name="add_place_text_6">Next, Mark your business location on the map.\nTo mark your location , First allow all permissions needed and turn on location share option.\n\nWith Location share enabled , your place details wiil be listed on NEAR BY search page.\nKindly note that your location must be inside the Ranchites circle as shown in the map.</string>
+    <string name="add_place_text_7">Lastly, You need to agree to the terms and conditions to add your place details.</string>
+    <string name="add_place_text_map_guide">Mark Your location on map</string>
+
+
+    <string name="choose_category_guide">Choose \"Others\" if your category is not listed. Or E-mail us to get your category listed.</string>
+    <string name="add_desc_guide">Include hashtags to improve your business reach.</string>
+    <string name="city_update">City Updates</string>
+
+
+    <string name="privacy_policy_link"><a href='https://sites.google.com/view/ranchites-privacy-policy'>Privacy Policy</a></string>
+    <string name="terms_and_conditions_link"><a href='https://sites.google.com/view/ranchites-terms-and-conditions'>Terms and Conditions</a></string>
+    <string name="sign_up_accept_terms_policies">I have read and accept the <a href='https://sites.google.com/view/ranchites-terms-and-conditions'> Terms and Conditions </a> and <a href='https://sites.google.com/view/ranchites-privacy-policy'> Privacy Policy </a> </string>
+    
+</resources>

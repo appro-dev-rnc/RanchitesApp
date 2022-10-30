@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_main_item_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_main_item_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/menu_profile"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_main_my_place_guide"
+        android:icon="@drawable/ic_ques_black"
+        android:title="How to ?"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none"
+        >
+        <item android:id="@+id/nav_all_categories"
+            android:title="@string/menu_all_categories"
+            android:icon="@drawable/ic_nav_all_category"
+            />
+        <item
+            android:id="@+id/nav_saved_locations"
+            android:title="@string/menu_saved_loc"
+            android:icon="@drawable/ic_nav_saved"
+            />
+
+    </group>
+
+    <item android:title="@string/menu_communicate">
+        <menu >
+            <group android:checkableBehavior="none"
+                >
+                <item android:id="@+id/nav_privacy_policy"
+                    android:title="@string/menu_privacy_policy"
+                    android:icon="@drawable/ic_privacy"
+                    />
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="@string/about_and_how_to"
+                    android:icon="@drawable/ic_nav_about"
+                    />
+
+            </group>
+
+        </menu>
+    </item>
+</menu>

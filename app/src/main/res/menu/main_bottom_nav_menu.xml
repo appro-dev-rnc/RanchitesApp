@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/mainBottomNavHomeitem"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/mainBottomNavMyPlaceItem"
+        android:title="@string/my_place_business"
+        android:icon="@drawable/ic_business_vect"/>
+
+</menu>

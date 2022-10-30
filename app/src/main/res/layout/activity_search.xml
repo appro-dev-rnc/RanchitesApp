@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SearchActivity"
+    android:id="@+id/search_page_parent_view">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <com.google.android.material.appbar.CollapsingToolbarLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          >
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textLayoutSearchKeyword"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:hint="@string/search"
+              android:textColorHint="@color/black"
+              app:boxStrokeWidthFocused="1dp"
+              app:endIconMode="custom"
+              app:endIconDrawable="@drawable/ic_search"
+              app:endIconTint="@color/black"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:startIconDrawable="@drawable/ic_title"
+              app:startIconTint="@color/black"
+              app:boxCornerRadiusBottomEnd="30dp"
+              app:boxCornerRadiusBottomStart="30dp"
+              app:boxCornerRadiusTopEnd="30dp"
+              app:boxCornerRadiusTopStart="30dp"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="8dp"
+              android:elevation="8dp"
+              app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+              >
+
+              <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                  android:id="@+id/autoSearchKeyword"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textCapWords"
+                  android:textColor="@color/black"
+                  android:imeOptions="actionSearch"
+                  />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/search_det_page_toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:layout_collapseMode="pin"
+              android:theme="@style/ToolbarTheme"
+              />
+      </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/searchResultParent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical"
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerSearchResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:visibility="gone"
+
+                        />
+                    <TextView
+                        android:id="@+id/txt_search_act_no_item_found"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_results_found_search_page"
+                        android:layout_margin="50dp"
+                        android:padding="16dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:id="@+id/txt_search_act_search_guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_act_guide"
+                        android:layout_margin="50dp"
+                        android:padding="16dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <TextView
+                    android:id="@+id/textrecentsearches"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/searchResultParent"
+                    android:text="@string/recent_searches"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_recent_searches_keyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/textrecentsearches"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textrecentlyviewedTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recycler_recent_searches_keyword"
+                    android:text="@string/recently_viewed"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_recently_viewed_search_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/textrecentlyviewedTag"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

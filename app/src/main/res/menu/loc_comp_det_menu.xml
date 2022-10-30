@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_loc_det_report"
+        android:icon="@android:drawable/ic_menu_report_image"
+        android:title="@string/menu_report_this_place"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_loc_det_save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/menu_add_to_saved_collection"
+        app:showAsAction="never" />
+</menu>

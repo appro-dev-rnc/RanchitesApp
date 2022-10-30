@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="colorPrimary">#DB6A1B</color>
+    <color name="colorLightPrimary">#F8A58A</color>
+    <color name="colorDarkPrimary">#820000</color>
+    <color name="colorIconsText">#FFFFFF</color>
+    <color name="colorAccent">#7C4DFF</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <color name="colorDotsBase">#dfbfa1</color>
+    <color name="colorDotSelected">#ff8243</color>
+
+    <color name="color_grey_dark">#808080</color>
+
+    <color name="colorLightBackground">#F5F5F5</color>
+    <color name="colorGreenLight">#F3D9DB</color>
+    <color name="splash_background">#820000</color>
+    <color name="login_screen_green">#36926A</color>
+    <color name="sign_up_screen_bg">#DC96F7</color>
+
+    <color name="on_boarding_first_page_bg">#F8A58A</color>
+    <color name="on_boarding_second_page_bg">#F1B62D</color>
+    <color name="on_boarding_third_page_bg">#55D0A5</color>
+
+    <color name="seekbar_track_indicator">#3CB371</color>
+
+    <color name="fetured_background_color">#F9EBEA</color>
+    <color name="fetured_item_color">#FDD8BC</color>
+    <color name="recently_viewed_background_color">#FDEDEC</color>
+    <color name="recently_viewed_item_background_color">#F5B7B1</color>
+    <color name="most_searched_background_color">#FEF9E7</color>
+    <color name="most_searched_item_background_color">#F9E79F</color>
+    <color name="city_professionals_background_color">#FDF2E9</color>
+    <color name="city_professionals_item_background_color">#F5CBA7</color>
+    <color name="best_rated_background_color">#E8F6F3</color>
+    <color name="best_rated_item_background_color">#A2D9CE</color>
+
+    <color name="home_page_bg">#7FB3D5</color>
+    <color name="home_page_bg_light">#D6EAF8</color>
+
+    <color name="splash_background_blue">#1F618D</color>
+
+    <color name="add_edit_card_bg">#FBEEE6</color>
+
+
+</resources>

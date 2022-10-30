@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_det_page_parent_view"
+>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/user_det_app_barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/user_det_collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="true"
+            app:contentScrim="@color/white"
+            app:collapsedTitleTextColor="@color/black"
+            app:expandedTitleTextColor="@color/black"
+            app:expandedTitleGravity="top|start"
+            app:expandedTitleMarginTop="90dp"
+            app:expandedTitleMarginStart="135dp"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:expandedTitleTextAppearance="@style/ExtendedAppBarTitle"
+            app:maxLines="1"
+            >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="?attr/actionBarSize"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_user_com_det_profile_pic"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="20dp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/linear_user_rating_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_user_com_det_profile_pic"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/txt_user_com_det_profession"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+
+                            <androidx.appcompat.widget.AppCompatRatingBar
+                                android:id="@+id/rating_usr_com_profile_rating"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:focusable="false"
+                                android:numStars="5"
+                                android:theme="@style/RatingBarThemeDarkBg"
+                                android:stepSize="0.1" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/material_user_det_phone_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linear_user_rating_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="12dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toStartOf="@id/img_user_det_phone_next"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <TextView
+                                        style="@style/TextAppearance.AppCompat.Subhead"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="@string/phone_number"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_user_com_det_phone"
+                                        style="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:maxLines="1"
+                                        android:textColor="@color/black"/>
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                                <ImageView
+                                    android:id="@+id/img_user_det_phone_next"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_next_black"
+                                    android:padding="4dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:contentDescription="@string/next"
+                                    />
+                            </RelativeLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/material_user_det_email_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/material_user_det_phone_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="4dp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toStartOf="@id/img_user_det_email_next"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <TextView
+                                        style="@style/TextAppearance.AppCompat.Subhead"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="@string/email"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_user_com_det_email"
+                                        style="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:maxLines="1"
+                                        android:textColor="@color/black" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                                <ImageView
+                                    android:id="@+id/img_user_det_email_next"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_next_black"
+                                    android:padding="4dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:contentDescription="@string/next"
+                                    />
+                            </RelativeLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+                    </RelativeLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/user_det_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                android:theme="@style/ToolbarTheme"
+                />
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/user_com_det_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:elevation="4dp"
+            app:tabIndicatorColor="@color/black"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/black"
+            app:layout_collapseMode="pin"
+            app:tabBackground="@color/colorLightPrimary"
+            />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/user_com_det_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:fitsSystemWindows="true"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
