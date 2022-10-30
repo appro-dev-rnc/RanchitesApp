@@ -201,11 +201,11 @@
             android:resource="@array/preloaded_fonts" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDfnyxSj5EkgLjfDwlFL_Q8wxxlYJgDYD0" />
+            android:value="YOUR_API_KEY" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4597166595156209~3749691406"/>
+            android:value="YOUR_APP_ID"/>
     </application>
 
 </manifest>
